@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>第一个文章</title>
+      <link href="/2022/08/22/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/"/>
+      <url>/2022/08/22/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title> Cherry_Blossoms </title>    <!-- <script src="./js/Cherry_Blossoms.js" type="text/javascript"></script> (ctrl+/)添加注释，前面那串方法用于添加外部js文件-->    <!-- <link rel="stylesheet" href="./css/Cherry_Blossoms.css" type="text/css" /> 这个用于添加内部css文件 -->    <!-- 由于缺少源文件，故采用引用外边地址方法 --></head><body>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nineya/blog_file/css/yinghua/yinghua.min.css">    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/nineya/blog_file/js/yinghua/yinghua.js"></script>    <div class="cherry">    <img id="yinghua" src="https://cdn.jsdelivr.net/gh/nineya/blog_file/images/yinghua/yinghua.png" alt="" >    </div>    <script>    $(function(){        $('.cherry').Cherry_Blossoms({            is_Cherry:true,//是否生成樱花            image_min:10,//花瓣最小宽度和高度            image_max:50,//花瓣最大宽度和高度            time_min:10000,//花瓣最快下坠时间            time_max:20000,//花瓣最慢下坠时间            interval:500//花瓣生成时间间隔        })    })    </script>立志成为前端工程师</body></html>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/08/20/hello-world/"/>
+      <url>/2022/08/20/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cherry_Blossoms </title>
+    <!-- <script src="./js/Cherry_Blossoms.js" type="text/javascript"></script> (ctrl+/)添加注释，前面那串方法用于添加外部js文件-->
+    <!-- <link rel="stylesheet" href="./css/Cherry_Blossoms.css" type="text/css" /> 这个用于添加内部css文件 -->
+    <!-- 由于缺少源文件，故采用引用外边地址方法 -->
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nineya/blog_file/css/yinghua/yinghua.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/nineya/blog_file/js/yinghua/yinghua.js"></script>
+    <div class="cherry">
+    <img id="yinghua" src="https://cdn.jsdelivr.net/gh/nineya/blog_file/images/yinghua/yinghua.png" alt="" >
+    </div>
+    <script>
+    $(function(){
+        $('.cherry').Cherry_Blossoms({
+            is_Cherry:true,//是否生成樱花
+            image_min:10,//花瓣最小宽度和高度
+            image_max:50,//花瓣最大宽度和高度
+            time_min:10000,//花瓣最快下坠时间
+            time_max:20000,//花瓣最慢下坠时间
+            interval:500//花瓣生成时间间隔
+        })
+    })
+    </script>
+
+立志成为前端工程师
+</body>
+
+</html>
+
+
