@@ -358,8 +358,8 @@ button:not(:disabled) {
 }
 
   /* 代码框主题 */
-  #article-container figure.highlight {
-    border-radius: 10px;
+#article-container figure.highlight {
+    border-radius: 10px; 
 }
 #article-container figure.highlight .highlight-tools:after {
     position: absolute;
@@ -368,14 +368,9 @@ button:not(:disabled) {
     height: 12px;
     border-radius: 50%;
     background: #fc625d;
-    -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
     box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
     content: ' ';
 }
-#article-container pre{color:#f8f8f2;background:#696969}
-#article-container figure.highlight .highlight-tools{background:#3f3f3f;color:#fff}
-#article-container figure.highlight .gutter pre{color:#d3d3d3;background:grey}
-#article-container figure.highlight figcaption a{color:#a9a9a9!important}
 
 
 

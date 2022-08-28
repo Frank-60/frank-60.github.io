@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>markdown格式 | Frank's blog</title><meta name="author" content="Frank"><meta name="copyright" content="Frank"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Markdown语法介绍（详细）                                                                                                          阿飞__">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown格式">
+<meta property="og:url" content="http://frank-60.github.io/2022/08/22/markdown%E6%A0%BC%E5%BC%8F/index.html">
+<meta property="og:site_name" content="Frank&#39;s blog">
+<meta property="og:description" content="Markdown语法介绍（详细）                                                                                                          阿飞__">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://frank-60.github.io/img/2.png">
+<meta property="article:published_time" content="2022-08-22T08:31:15.000Z">
+<meta property="article:modified_time" content="2022-08-28T02:27:34.007Z">
+<meta property="article:author" content="Frank">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://frank-60.github.io/img/2.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://frank-60.github.io/2022/08/22/markdown%E6%A0%BC%E5%BC%8F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#49b1f5"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/icon1.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/icon2.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/icon3.png"/><link rel="mask-icon" href="/img/siteicon/icon4.png" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'markdown格式',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-28 10:27:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/CSS/style.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-blog@latest/css/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="web_bg" style="background:url(/img/2.png);background-attachment: local;background-position: center;background-size: cover;background-repeat: no-repeat;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/./img/2.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Frank's blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">markdown格式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-22T08:31:15.000Z" title="Created 2022-08-22 16:31:15">2022-08-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-08-28T02:27:34.007Z" title="Updated 2022-08-28 10:27:34">2022-08-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>6min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="markdown格式"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="blog-content-box">
+        <div class="article-header-box">
+        <div class="article-header">
+            <div class="article-title-box">
+                <h1 class="title-article" id="articleContentId">Markdown语法介绍（详细）</h1>
+            </div>
+            <div class="article-info-box">
+                <div class="article-bar-top">
+                    <img class="article-type-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/original.png" alt="">
+                    <div class="bar-content">
+                    <a class="follow-nickName " href="https://blog.csdn.net/afei__" target="_blank" rel="noopener">阿飞__</a>
+                    <img class="article-time-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/newCurrentTime2.png" alt="">
+                    <span class="time">于&nbsp;2018-06-17 11:01:55&nbsp;发布</span>
+                    <img class="article-read-img article-heard-img" src="https://csdnimg.cn/release/blogv2/dist/pc/img/articleReadEyes2.png" alt="">
+                    <span class="read-count">182213</span>
+                    <a id="blog_detail_zk_collection" class="un-collection" data-report-click="{&quot;mod&quot;:&quot;popu_823&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4232&quot;,&quot;ab&quot;:&quot;new&quot;}">
+                        <img class="article-collect-img article-heard-img un-collect-status isdefault" style="display:inline-block" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollect2.png" alt="">
+                        <img class="article-collect-img article-heard-img collect-status isactive" style="display:none" src="https://csdnimg.cn/release/blogv2/dist/pc/img/tobarCollectionActive2.png" alt="">
+                        <span class="name">收藏</span>
+                        <span class="get-collection">
+                            1221
+                        </span>
+                    </a>
+                    </div>
+                </div>
+                <div class="blog-tags-box">
+                    <div class="tags-box artic-tag-box">
+                            <span class="label">分类专栏：</span>
+                                <a class="tag-link" href="https://blog.csdn.net/afei__/category_7818376.html" target="_blank" rel="noopener">其它</a>
+                            <span class="label">文章标签：</span>
+                                <a data-report-click="{&quot;mod&quot;:&quot;popu_626&quot;,&quot;spm&quot;:&quot;1001.2101.3001.4223&quot;,&quot;strategy&quot;:&quot;Markdown&quot;,&quot;ab&quot;:&quot;new&quot;,&quot;extra&quot;:&quot;{\&quot;searchword\&quot;:\&quot;Markdown\&quot;}&quot;}" class="tag-link" href="https://so.csdn.net/so/search/s.do?q=Markdown&amp;t=blog&amp;o=vip&amp;s=&amp;l=&amp;f=&amp;viparticle=" target="_blank" rel="noopener">Markdown</a>
+                    </div>
+                </div>
+                <div class="slide-content-box">
+                    <div class="article-copyright">
+                        <div class="creativecommons">
+                            版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。
+                        </div>
+                        <div class="article-source-link">
+                            本文链接：<a href="https://blog.csdn.net/afei__/article/details/80717153" target="_blank">https://blog.csdn.net/afei__/article/details/80717153</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="operating">
+                    <a class="href-article-edit slide-toggle">版权</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<pre><code>    &lt;div id=&quot;blogColumnPayAdvert&quot;&gt;
+        &lt;div class=&quot;column-group&quot;&gt;
+            &lt;div class=&quot;column-group-item column-group0 column-group-item-one&quot;&gt;
+                &lt;div class=&quot;item-l&quot;&gt;
+                    &lt;a class=&quot;item-target&quot; href=&quot;https://blog.csdn.net/afei__/category_7818376.html&quot; target=&quot;_blank&quot; title=&quot;其它&quot; data-report-click=&quot;&#123;&amp;quot;spm&amp;quot;:&amp;quot;1001.2101.3001.6332&amp;quot;&#125;&quot;&gt;
+                        &lt;img class=&quot;item-target&quot; src=&quot;https://img-blog.csdnimg.cn/20201014180756757.png?x-oss-process=image/resize,m_fixed,h_64,w_64&quot; alt=&quot;&quot;&gt;
+                        &lt;span class=&quot;title item-target&quot;&gt;
+                            &lt;span&gt;
+                            &lt;span class=&quot;tit&quot;&gt;其它&lt;/span&gt;
+                                &lt;span class=&quot;dec&quot;&gt;专栏收录该内容&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item-m&quot;&gt;
+                    &lt;span&gt;7 篇文章&lt;/span&gt;
+                    &lt;span&gt;16 订阅&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item-r&quot;&gt;
+                        &lt;a class=&quot;item-target article-column-bt articleColumnFreeBt&quot; data-id=&quot;7818376&quot;&gt;订阅专栏&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;article class=&quot;baidu_pl&quot;&gt;
+    &lt;div id=&quot;article_content&quot; class=&quot;article_content clearfix&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://csdnimg.cn/release/blogv2/dist/mdeditor/css/editerView/ck_htmledit_views-b3c43d3711.css&quot;&gt;
+            &lt;div id=&quot;content_views&quot; class=&quot;htmledit_views&quot;&gt;
+                &lt;h2&gt;&lt;a name=&quot;t0&quot;&gt;&lt;/a&gt;一、什么是 Markdown&lt;/h2&gt; 
+</code></pre><p><p>&nbsp;&nbsp;&nbsp;Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p> </p>
+<p><p>&nbsp;</p> </p>
+<p><h2><a name="t1"></a>二、下载和使用</h2> </p>
+<p><p>1. 客户端</p> </p>
+<p><p>&nbsp;&nbsp;&nbsp;&nbsp;我使用的是 <strong>作业部落</strong> 出品的 <strong>Cmd Markdown</strong>，下面演示也是使用该 IDE 作为演示。</p> </p>
+<p><p>2. 网页插件</p> </p>
+<p><p>&nbsp;&nbsp;&nbsp;&nbsp;如果你使用的是 chrome 游览器，那么可以安装一款叫做 <strong>Markdown Here</strong> 的插件，也是十分好用。</p> </p>
+<p><p>&nbsp;</p> </p>
+<p><h2><a name="t2"></a>三、应用</h2> </p>
+<p><ul><li>用来写博客、邮件</li><li>Markdown 很容易转化成 HTML 或者 PDF</li><li>git 的 <code>README.md</code> 就是 Markdown 格式的</li></ul></p>
+<p><p>例如：<a target="_blank" rel="noopener" href="https://gitee.com/afei_/MarkdownDemo">https://gitee.com/afei_/MarkdownDemo</a>&nbsp;和&nbsp;<a target="_blank" rel="noopener" href="https://github.com/afei-cn/MarkdownDemo">https://github.com/afei-cn/MarkdownDemo</a></p> </p>
+<p><p>&nbsp;</p> </p>
+<p><p>&nbsp;</p> </p>
+<p><h2><a name="t3"></a>四、语法介绍</h2> </p>
+<p><p><span style="color:#ff0000;">注意：很多需要效果展示的地方，参考配图中的红色区域。</span></p> </p>
+<p><p>1. 标题</p> </p>
+<p><p>第一种是使用 <code>#</code> 表示标题，其中 <code>#</code> 号必须在行首，<br> 第二种是使用 <code>===</code> 或者 <code>---</code> 表示。</p> </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617104727399?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>2. 分割线</p> </p>
+<p><p>使用三个或以上的 <code>-</code> 或者 <code>*</code> 表示，且这一行只有符号，<strong>注意不要被识别为二级标题即可</strong>，例如中间或者前面可以加空格。</p> </p>
+<p><p>3. 斜体和粗体</p> </p>
+<p><p>使用 <code>*</code> 和 <code>**</code> 分别表示斜体和粗体，删除线使用两个 <code>~</code> 表示</p> </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617104742331?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>4. 超链接和图片</p> </p>
+<p><p>链接和图片的写法类似，图片仅在超链接前多了一个 <code>!</code> ，一般是 [文字描述] (链接)</p> </p>
+<p><p>5. 无序列表</p> </p>
+<p><p>使用 <code>-</code>、<code>+</code> 和 <code>*</code> 表示无序列表，前后留一行空白，可嵌套，例如</p> </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617104812563?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>6. 有序列表</p> </p>
+<p><p>使用 <code>1.</code> （点号后面有个空格）表示有序列表，可嵌套。</p> </p>
+<p><p>7. 文字引用</p> </p>
+<p><p>使用 <code>&gt;</code> 表示，可以有多个 <code>&gt;</code>，表示层级更深，例如</p><div class="articleConDownSource" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.8634&quot;}" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.8634&quot;}"><a target="_blank" href="https://download.csdn.net/download/weixin_38514660/13717423" data-report-view="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;&quot;,&quot;extra&quot;:&quot;{\&quot;utm_medium\&quot;:\&quot;distribute.pc_blog_inner_ad.none-task-download-2~default~HISTORY_SEARCH_TARGETING~default-1-13717423-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr\&quot;,\&quot;dist_request_id\&quot;:\&quot;1661602726687_12292\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1661602726687_12292&quot;,&quot;ab_strategy&quot;:&quot;default&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~HISTORY_SEARCH_TARGETING~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_38514660/13717423&quot;}" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.1&quot;,&quot;mod&quot;:&quot;&quot;,&quot;extra&quot;:&quot;{\&quot;utm_medium\&quot;:\&quot;distribute.pc_blog_inner_ad.none-task-download-2~default~HISTORY_SEARCH_TARGETING~default-1-13717423-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr\&quot;,\&quot;dist_request_id\&quot;:\&quot;1661602726687_12292\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1661602726687_12292&quot;,&quot;ab_strategy&quot;:&quot;default&quot;,&quot;index&quot;:&quot;1&quot;,&quot;strategy&quot;:&quot;2~default~HISTORY_SEARCH_TARGETING~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/weixin_38514660/13717423&quot;}" data-report-query="spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_blog_inner_ad.none-task-download-2%7Edefault%7EHISTORY_SEARCH_TARGETING%7Edefault-1-13717423-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr&amp;depth_1-utm_source=distribute.pc_blog_inner_ad.none-task-download-2%7Edefault%7EHISTORY_SEARCH_TARGETING%7Edefault-1-13717423-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr">            <div class="card-left">                <div class="card-left-t">php 从数据库提取二进制图片的处理代码</div>                <div class="card-left-b">                    <span class="classfiy">pdf</span>                    <img class="star contentImg-no-view" src="https://csdnimg.cn/release/blogv2/dist/components/img/star.png" alt="">                    <span class="text">0星</span>                    <span class="circle"></span>                    <span class="text">超过10%的资源</span>                    <span class="circle"></span>                    <span class="text">28KB</span>                </div>            &lt;/div&gt;            <div class="card-right">                <div class="card-right-t"><img class="contentImg-no-view" src="https://csdnimg.cn/release/blogv2/dist/components/img/arrowDownWhite.png" alt=""></div>                <div class="card-right-b">下载</div>            &lt;/div&gt;        &lt;/a&gt;&lt;/div&gt; </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617105056177?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>8. 行内代码块</p> </p>
+<p><p>其实上面已经用过很多次了，即使用 ` 表示，例如</p> </p>
+<p><p>扩展：很多字符是需要转义，使用反斜杠 <code>\</code> 进行转义</p> </p>
+<p><p>9. 代码块</p> </p>
+<p><p>使用四个空格缩进表示代码块，一些 IDE 支持行数提示和着色，一般使用三个 ` 表示，例如</p> </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617105120413?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>10. 表格</p> </p>
+<p><p>直接看例子吧，第二行的 <code>---:</code> 表示了对齐方式，默认<strong>左对齐</strong>，还有&nbsp;<strong>右对齐&nbsp;</strong>和&nbsp;<strong>居中</strong></p> </p>
+<p><p>|商品|数量|单价|<br> |-|-------:|:------:|<br> |苹果|10|\$1|<br> |电脑|1|\$1000|</p> </p>
+<p><p><strong><img alt="" class="has" src="https://img-blog.csdn.net/20180617105147160?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></strong></p> </p>
+<p><p>11. 流程图</p> </p>
+<p><p>主要的语法为 <code>name=&gt;type: describe</code>，其中 type 主要有以下几种：<br> 1.开始和结束：<code>start</code> <code>end</code><br> 2.输入输出：<code>inputoutput</code><br> 3.操作：<code>operation</code><br> 4.条件：<code>condition</code><br> 5.子程序：<code>subroutine</code></p> </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617105213264?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>更多语法参考：<a target="_blank" rel="noopener" href="http://adrai.github.io/flowchart.js/">流程图语法参考</a></p> </p>
+<p><p>&nbsp;</p><div class="articleConDownSource" data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.8636&quot;}"><a target="_blank" href="https://download.csdn.net/download/lovelizheng/10028070" data-report-click="{&quot;ab&quot;:&quot;new&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6650.2&quot;,&quot;mod&quot;:&quot;&quot;,&quot;extra&quot;:&quot;{\&quot;utm_medium\&quot;:\&quot;distribute.pc_blog_inner_ad.none-task-download-2~default~HISTORY_SEARCH_TARGETING~default-2-10028070-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr\&quot;,\&quot;dist_request_id\&quot;:\&quot;1661602726687_12292\&quot;}&quot;,&quot;dist_request_id&quot;:&quot;1661602726687_12292&quot;,&quot;ab_strategy&quot;:&quot;default&quot;,&quot;index&quot;:&quot;2&quot;,&quot;strategy&quot;:&quot;2~default~HISTORY_SEARCH_TARGETING~default&quot;,&quot;dest&quot;:&quot;https://download.csdn.net/download/lovelizheng/10028070&quot;}" data-report-query="spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_blog_inner_ad.none-task-download-2%7Edefault%7EHISTORY_SEARCH_TARGETING%7Edefault-2-10028070-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr&amp;depth_1-utm_source=distribute.pc_blog_inner_ad.none-task-download-2%7Edefault%7EHISTORY_SEARCH_TARGETING%7Edefault-2-10028070-blog-80717153.pc_bloginner_targeting_eslanding_mlkctr">            <div class="card-left">                <div class="card-left-t">SharepointQueryTool</div>                <div class="card-left-b">                    <span class="classfiy">zip</span>                    <img class="star contentImg-no-view" src="https://csdnimg.cn/release/blogv2/dist/components/img/star.png" alt="">                    <span class="text">0星</span>                    <span class="circle"></span>                    <span class="text">超过10%的资源</span>                    <span class="circle"></span>                    <span class="text">3.54MB</span>                </div>            &lt;/div&gt;            <div class="card-right">                <div class="card-right-t"><img class="contentImg-no-view" src="https://csdnimg.cn/release/blogv2/dist/components/img/arrowDownWhite.png" alt=""></div>                <div class="card-right-b">下载</div>            &lt;/div&gt;        &lt;/a&gt;&lt;/div&gt; </p>
+<p><p>12. 数学公式</p> </p>
+<p><p>使用 <code>$</code> 表示，其中一个 $ 表示在行内，两个 $ 表示独占一行。</p> </p>
+<p><p>eg : $\sum_{i=1}^n a_i=0$</p> </p>
+<p><p>支持 <strong>LaTeX </strong>编辑显示支持，访问 <a target="_blank" rel="noopener" href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax </a>参考更多使用方法。</p> </p>
+<p><p>推荐一个常用的数学公式在线编译网站：<a target="_blank" rel="noopener" href="https://private.codecogs.com/latex/eqneditor.php">https://private.codecogs.com/latex/eqneditor.php</a></p> </p>
+<p><p>13.支持 HTML 标签</p> </p>
+<p><p>例如想要段落的缩进，可以如下：</p> </p>
+<p><p>&nbsp;&nbsp;不断行的空白格&nbsp;或&nbsp;<br> &ensp;&ensp;半方大的空白&ensp;或&ensp;<br> &emsp;&emsp;全方大的空白&emsp;或&emsp;</p> </p>
+<p><p><img alt="" class="has" src="https://img-blog.csdn.net/20180617105447754?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FmZWlfXw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p> </p>
+<p><p>点我跳转的功能这里演示不了，写法如下：</p> </p>
+<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 id='anchor'&gt;我是一个锚点&lt;/h6&gt;</p> </p>
+<p><p>&nbsp;&nbsp;&nbsp;&nbsp;[点我跳转](#anchor)</p> </p>
+<p><p>&nbsp;</p> </p>
+<p><h2><a name="t4"></a>五、其它</h2> </p>
+<p><ol><li>markdown 各个 IDE 的使用可能存在大同小异，一般可以参考各个 IDE 的介绍文档</li><li>本文档介绍的内容基本适用于大部分的 IDE</li><li>本文档使用的 IDE 是 “作业部落 Cmd Markdown”，官网已经下载：<a target="_blank" rel="noopener" href="https://www.zybuluo.com/cmd/">https://www.zybuluo.com/cmd/</a></li></ol></p>
+<p><p>&ZeroWidthSpace;</p><br>                &lt;/div&gt;<div data-report-view="{&quot;mod&quot;:&quot;1585297308_001&quot;,&quot;spm&quot;:&quot;1001.2101.3001.6548&quot;,&quot;dest&quot;:&quot;https://blog.csdn.net/afei__/article/details/80717153&quot;,&quot;extend1&quot;:&quot;pc&quot;,&quot;ab&quot;:&quot;new&quot;}"><div></div>&lt;/div&gt;<br>        &lt;/div&gt;<br>        <div id="treeSkill" data-report-view="{&quot;spm&quot;:&quot;1001.2101.3001.6707&quot;}" style="display: block;"><div class="skill-tree-box"><div class="skill-tree-head">文章已被收录至官方知识档案</div><div class="skill-tree-body"><div class="skill-tree-item"><span class="skill-tree-href"><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6707&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/gml/gml-e67e64c1c880432ab6bc1b0452124ec0&quot;}" href="https://edu.csdn.net/skill/gml/gml-e67e64c1c880432ab6bc1b0452124ec0" target="_blank">CS入门技能树</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6707&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/gml/gml-e67e64c1c880432ab6bc1b0452124ec0&quot;}" href="https://edu.csdn.net/skill/gml/gml-e67e64c1c880432ab6bc1b0452124ec0" target="_blank">MarkDown入门</a><i></i><a data-report-click="{&quot;spm&quot;:&quot;1001.2101.3001.6707&quot;,&quot;dest&quot;:&quot;https://edu.csdn.net/skill/gml/gml-e67e64c1c880432ab6bc1b0452124ec0&quot;}" href="https://edu.csdn.net/skill/gml/gml-e67e64c1c880432ab6bc1b0452124ec0" target="_blank">MarkDown介绍</a></span><span class="skill-tree-con"><span class="skill-tree-count">15062</span> 人正在系统学习中</span></div>&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;<br>    &lt;/article&gt;<br>  <script>
+  $(function() {
+    setTimeout(function () {
+      var mathcodeList = document.querySelectorAll('.htmledit_views img.mathcode');
+      if (mathcodeList.length > 0) {
+        var testImg = new Image();
+        testImg.onerror = function () {
+          mathcodeList.forEach(function (item) {
+            $(item).before('<span class="img-codecogs">\\(' + item.alt + '\\)</span>');
+            $(item).remove();
+          })
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+        testImg.src = mathcodeList[0].src;
+      }
+    }, 1000)
+  })
+  </script><br>&lt;/div&gt;</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://frank-60.github.io">Frank</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://frank-60.github.io/2022/08/22/markdown%E6%A0%BC%E5%BC%8F/">http://frank-60.github.io/2022/08/22/markdown%E6%A0%BC%E5%BC%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/./img/2.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/08/22/skiprander%E7%9A%84%E4%BD%BF%E7%94%A8/"><img class="prev-cover" src="/./img/1.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">skiprander的使用</div></div></a></div><div class="next-post pull-right"><a href="/2022/08/22/html%E5%92%8Ccss%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/"><img class="next-cover" src="/./img/4.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">html和css笔记整理</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Frank</div><div class="author-info__description">知足且坚定，温柔且上进</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Frank-60"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Frank-60" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="/18202017322.163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Welcome to my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#articleContentId"><span class="toc-number">1.</span> <span class="toc-text">Markdown语法介绍（详细）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.1.</span> <span class="toc-text">二、下载和使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.2.</span> <span class="toc-text">三、应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.3.</span> <span class="toc-text">四、语法介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.4.</span> <span class="toc-text">五、其它</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/28/html%E5%92%8Ccss%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E6%A0%8F%E7%BC%93%E6%85%A2%E4%B8%8B%E6%8B%89%E6%95%88%E6%9E%9C/" title="html和css实现菜单栏缓慢下拉效果"><img src="/./img/5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="html和css实现菜单栏缓慢下拉效果"/></a><div class="content"><a class="title" href="/2022/08/28/html%E5%92%8Ccss%E5%AE%9E%E7%8E%B0%E8%8F%9C%E5%8D%95%E6%A0%8F%E7%BC%93%E6%85%A2%E4%B8%8B%E6%8B%89%E6%95%88%E6%9E%9C/" title="html和css实现菜单栏缓慢下拉效果">html和css实现菜单栏缓慢下拉效果</a><time datetime="2022-08-28T03:24:54.962Z" title="Created 2022-08-28 11:24:54">2022-08-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/27/%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%B8%83%E5%B1%80%E5%88%A9%E5%99%A8%E2%80%94Flex%E5%B8%83%E5%B1%80/" title="深度解析布局利器—Flex布局"><img src="/./img/Ania.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="深度解析布局利器—Flex布局"/></a><div class="content"><a class="title" href="/2022/08/27/%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%B8%83%E5%B1%80%E5%88%A9%E5%99%A8%E2%80%94Flex%E5%B8%83%E5%B1%80/" title="深度解析布局利器—Flex布局">深度解析布局利器—Flex布局</a><time datetime="2022-08-26T16:33:57.658Z" title="Created 2022-08-27 00:33:57">2022-08-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/26/%E5%9F%BA%E4%BA%8EButterfly%E7%9A%84%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E5%BC%95%E5%85%A5/" title="基于Butterfly的外挂标签引入"><img src="/./img/spy.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于Butterfly的外挂标签引入"/></a><div class="content"><a class="title" href="/2022/08/26/%E5%9F%BA%E4%BA%8EButterfly%E7%9A%84%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E5%BC%95%E5%85%A5/" title="基于Butterfly的外挂标签引入">基于Butterfly的外挂标签引入</a><time datetime="2022-08-26T06:25:36.623Z" title="Created 2022-08-26 14:25:36">2022-08-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/22/skiprander%E7%9A%84%E4%BD%BF%E7%94%A8/" title="skiprander的使用"><img src="/./img/1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="skiprander的使用"/></a><div class="content"><a class="title" href="/2022/08/22/skiprander%E7%9A%84%E4%BD%BF%E7%94%A8/" title="skiprander的使用">skiprander的使用</a><time datetime="2022-08-22T08:31:15.000Z" title="Created 2022-08-22 16:31:15">2022-08-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/08/22/markdown%E6%A0%BC%E5%BC%8F/" title="markdown格式"><img src="/./img/2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="markdown格式"/></a><div class="content"><a class="title" href="/2022/08/22/markdown%E6%A0%BC%E5%BC%8F/" title="markdown格式">markdown格式</a><time datetime="2022-08-22T08:31:15.000Z" title="Created 2022-08-22 16:31:15">2022-08-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By Frank</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script type="text/javascript" src="/JS/script.js" ></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v3.8.2" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" data-title="本站使用JsDelivr为静态资源提供CDN加速" title=""><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&amp;logo=jsDelivr" alt=""/></a><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index" style="margin-inline:5px" data-title="本站已在湘进行备案" title=""><img src="https://img.shields.io/badge/湘ICP备-2022004213号-e1d492?style=flat&amp;logo=data:image/png;base64,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" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/timer.js"></script><script async src="/js/ali_font.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
