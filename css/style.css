@@ -8,7 +8,7 @@
     font-family: ZhuZiAYuanJWD;
     src: url(https://cdn.cbd.int/anzhiyu-blog@latest/fonts/ZhuZiAWan.woff2);
     font-display: swap;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 div#menus {
@@ -360,17 +360,21 @@ button:not(:disabled) {
 
   /* 代码框主题 */
 #article-container figure.highlight {
-    border-radius: 10px; 
+    border-radius: 10px;
+    
 }
 #article-container figure.highlight .highlight-tools:after {
     position: absolute;
-    left: 14px;
+    left: 16px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #fc625d;
     box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
     content: ' ';
+}
+figure.highlight pre .tag{
+    font-size: 18px;
 }
 
 
